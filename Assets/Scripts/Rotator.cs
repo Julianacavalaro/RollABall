@@ -1,0 +1,14 @@
+
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    public float speed;
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime * speed);
+
+        speed = Mathf.Clamp(speed - Time.deltaTime, 1, 10);
+    }
+}
