@@ -32,7 +32,8 @@ public class PlayersController : MonoBehaviour
     {
         if (other.CompareTag("PickUp"))
         {
-            other.gameObject.SetActive(false);
+         //   other.gameObject.SetActive(false); //Deactivate gameObject
+         Destroy(other.gameObject); //destroy gameObject
         }
      
     }
