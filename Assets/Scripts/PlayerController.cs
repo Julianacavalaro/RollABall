@@ -4,11 +4,14 @@ using UnityEngine;
 public class PlayersController : MonoBehaviour
 {
     public float speed;
+    public int score;
     Rigidbody rb;
+    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        score = 0;
     }
 
     // Update is called once per frame
@@ -34,6 +37,8 @@ public class PlayersController : MonoBehaviour
         {
          //   other.gameObject.SetActive(false); //Deactivate gameObject
          Destroy(other.gameObject); //destroy gameObject
+            score++;
+            Debug.Log("New Score: " + score);
         }
      
     }
