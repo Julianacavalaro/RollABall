@@ -1,10 +1,12 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayersController : MonoBehaviour
 {
     public float speed;
     public int score;
+    public Text scoreText;
     Rigidbody rb;
     
     // Start is called before the first frame update
@@ -38,6 +40,7 @@ public class PlayersController : MonoBehaviour
          //   other.gameObject.SetActive(false); //Deactivate gameObject
          Destroy(other.gameObject); //destroy gameObject
             score++;
+            scoreText.text = "Points: " + score;
             Debug.Log("New Score: " + score);
         }
      
