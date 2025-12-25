@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Rotator : MonoBehaviour
 {
     public float speed;
     // Update is called once per frame

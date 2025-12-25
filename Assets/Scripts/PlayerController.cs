@@ -44,12 +44,22 @@ public class PlayersController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        int layerMask = 1 << LayerMask.NameToLayer("Selectable");
+
+        if (Physics.Raycast(mouseRay, out RaycastHit hit, Mathf.Infinity))
+        {
+            hit.transform.GetComponent<Rotator>().speed++;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
         Vector3 force = new Vector3(x, 0, y);
         force.Normalize();
         force *= speed;
+        force = Quaternion.Euler(0, Camera.main.transform.localEulerAngles.y, 0) * force;
         rb.AddForce(force);
     }
 
