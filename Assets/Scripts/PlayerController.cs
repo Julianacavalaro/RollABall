@@ -7,19 +7,39 @@ public class PlayersController : MonoBehaviour
     public float speed;
     public int score;
     public Text scoreText;
+    public Text gameOverText;
+    public Text countdownText;
+
+    public float Countdown;
+
     Rigidbody rb;
     
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         score = 0;
+        rb = GetComponent<Rigidbody>();
+        gameOverText.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        Countdown = Mathf.Clamp(Countdown - Time.deltaTime, 0 ,100);
+        countdownText.text = "Countdown: " + Mathf.CeilToInt(Countdown);
 
+        if (Countdown <= 0 && !gameOverText.gameObject.activeSelf)
+        {
+            gameOverText.text = "Game Over! Final Score: " + score;
+            gameOverText.gameObject.SetActive(true);
+           
+        }
+        if (score == 17 && !gameOverText.gameObject.activeSelf)
+        {
+            gameOverText.text = "You Win Score: " + score;
+            gameOverText.gameObject.SetActive(true);
+        }
     }
 
     private void FixedUpdate()
