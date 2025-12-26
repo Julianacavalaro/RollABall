@@ -18,8 +18,8 @@ public class PlayersController : MonoBehaviour
     void Start()
     {
         score = 0;
-        rb = GetComponent<Rigidbody>();
         gameOverText.gameObject.SetActive(false);
+        rb = GetComponent<Rigidbody>();
 
     }
 
@@ -48,7 +48,7 @@ public class PlayersController : MonoBehaviour
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         int layerMask = 1 << LayerMask.NameToLayer("Selectable");
 
-        if (Physics.Raycast(mouseRay, out RaycastHit hit, Mathf.Infinity))
+        if (Physics.Raycast(mouseRay, out RaycastHit hit, Mathf.Infinity, layerMask))
         {
             hit.transform.GetComponent<Rotator>().speed++;
         }
@@ -68,7 +68,7 @@ public class PlayersController : MonoBehaviour
         if (other.CompareTag("PickUp"))
         {
          //   other.gameObject.SetActive(false); //Deactivate gameObject
-         Destroy(other.gameObject); //destroy gameObject
+            Destroy(other.gameObject); //destroy gameObject
             score++;
             scoreText.text = "Points: " + score;
             Debug.Log("New Score: " + score);

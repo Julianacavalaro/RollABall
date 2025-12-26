@@ -488,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -601,7 +605,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 730038257}
-  m_Layer: 0
+  - component: {fileID: 730038258}
+  m_Layer: 6
   m_Name: Pick Ups
   m_TagString: PickUp
   m_Icon: {fileID: 0}
@@ -621,8 +626,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1680153196}
   - {fileID: 1407696289}
+  - {fileID: 1680153196}
   - {fileID: 967244720}
   - {fileID: 1434026134}
   - {fileID: 1230560592}
@@ -640,6 +645,19 @@ Transform:
   - {fileID: 1806903014}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730038258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730038256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda39b3fcdf4faf468d05ddee956d202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
 --- !u!1001 &762540129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -691,6 +709,10 @@ PrefabInstance:
     - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
       propertyPath: m_Name
       value: Pick Up (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -754,6 +776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -816,6 +842,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -839,7 +873,7 @@ GameObject:
   - component: {fileID: 881046286}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1169,6 +1203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1231,6 +1269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1289,7 +1331,7 @@ GameObject:
   - component: {fileID: 1204736775}
   m_Layer: 5
   m_Name: Countdown
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1340,7 +1382,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 30
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1409,6 +1451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1470,6 +1516,10 @@ PrefabInstance:
     - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
       propertyPath: m_Name
       value: Pick Up (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1533,6 +1583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1595,6 +1649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1656,6 +1714,10 @@ PrefabInstance:
     - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
       propertyPath: m_Name
       value: Pick Up (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1787,6 +1849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1809,7 +1875,6 @@ GameObject:
   - component: {fileID: 1550577607}
   - component: {fileID: 1550577606}
   - component: {fileID: 1550577605}
-  - component: {fileID: 1550577609}
   - component: {fileID: 1550577610}
   - component: {fileID: 1550577611}
   m_Layer: 0
@@ -1905,24 +1970,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1550577609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550577604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86e3948f0641ece4b87f7fd7e1ab460c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  score: 0
-  scoreText: {fileID: 2091042146}
-  gameOverText: {fileID: 0}
-  countdownText: {fileID: 0}
-  Countdown: 0
 --- !u!54 &1550577610
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1962,7 +2009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e3948f0641ece4b87f7fd7e1ab460c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 20
   score: 0
   scoreText: {fileID: 2091042146}
   gameOverText: {fileID: 881046286}
@@ -2019,6 +2066,10 @@ PrefabInstance:
     - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
       propertyPath: m_Name
       value: Pick Up (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2187,6 +2238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2248,6 +2303,10 @@ PrefabInstance:
     - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
       propertyPath: m_Name
       value: Pick Up (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2416,6 +2475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pick Up (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2558,6 +2621,10 @@ PrefabInstance:
     - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
       propertyPath: m_Name
       value: Pick Up (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867512809940360521, guid: 8af951321be841b45b4285a0f6a2e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

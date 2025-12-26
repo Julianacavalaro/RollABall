@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5002204370095229329}
   - component: {fileID: 154356237998884882}
   - component: {fileID: -5713163814186702456}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Pick Up
   m_TagString: PickUp
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f052d9f920a59fb479da70fe9f83b991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
 --- !u!54 &-5713163814186702456
 Rigidbody:
   m_ObjectHideFlags: 0
